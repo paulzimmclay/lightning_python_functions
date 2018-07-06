@@ -4,18 +4,20 @@
 # Each item should be prefaced by value of the string argument
 # Ex: I have visited the city of San Francisco if "San Francisco" was an item in the list
 
+
 def cities_visited(city_list, number, string='I have visited the city of '):
-#In the function body, loop over the list and output the items
-  city_sublist = city_list[:number]
-  for city in city_sublist:
-    print(f'{string}{city}')
+    # In the function body, loop over the list and output the items
+    city_sublist = city_list[:number]
+        for city in city_sublist:
+            print(f'{string}{city}')
+
 
 pauls_cities = [
-  'Annapolis',
-  'Baltimore',
-  'Philadelphia',
-  'San Francisco',
-  'Portland'
-  ]
+    'Annapolis',
+    'Baltimore',
+    'Philadelphia',
+    'San Francisco',
+    'Portland'
+]
 
 cities_visited(pauls_cities, 3, 'It\'s always sunny in ')
